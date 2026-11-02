@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d0d0d;
+  color: #f8f9fa;
+}
+
+/* Header Dark */
+.custom-header {
+  background-color: #121212 !important;
+  border-bottom: 1px solid #242424;
+}
+
+/* Brand / Logo */
+.navbar-brand-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+/* Navigazione Principale */
+.custom-nav .nav-link {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #a0a0a0 !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  transition: color 0.3s ease;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Spaziatore per bilanciare la centratura del menu su Desktop */
+@media (min-width: 992px) {
+  .header-spacer {
+    width: 260px; /* Pari alla larghezza approssimativa del logo a sinistra */
+  }
+}
+
+/* Pulsante Hamburger */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+/* --- HERO SECTION CUSTOM --- */
+.hero-section {
+  /* Assicura sfondo totalmente integrato col body ed elimina bordi/stacchi */
+  background-color: transparent !important;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Stili Tipografia Hero */
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Transizione tema per la Hero quando si passa a Light */
+body.theme-light .hero-section {
+  color: #121212;
+}
+
+body.theme-light .hero-title {
+  color: #121212;
+}
+
+body.theme-light .btn-outline-light {
+  color: #121212;
+  border-color: #121212;
+}
+
+body.theme-light .btn-outline-light:hover {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.scroll-down-btn {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-down-btn:hover {
+  color: #ffffff;
+}
+
+/* Animazione Rimbalzo */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Per uno scorrimento fluido della pagina al click */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- SEZIONE CARDS (EFFETTO ESPANDIBILE SCURO) --- */
+.cards-section {
+  background-color: #0d0d0d !important; /* Nero profondo uguale al body */
+}
+
+/* Wrapper Flex per l'effetto di espansione */
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .cards-wrapper {
+    flex-direction: row;
+    height: 480px; /* Altezza fisso su desktop per l'effetto fisarmonica */
+  }
+}
+
+/* Singola Card */
+.card-item {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  flex: 1;
+  transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1), transform 0.3s ease;
+  min-height: 250px;
+  filter: grayscale(100%);
+}
+
+@media (min-width: 768px) {
+  .card-item {
+    min-height: auto;
+  }
+  
+  /* Quando si passa il mouse, la card si espande rispetto alle altre */
+  .card-item:hover {
+    filter: grayscale(0%);
+    flex: 3;
+  }
+}
+
+/* Link e Immagine */
+.card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-item:hover .card-img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
+/* Sovrapposizione Sfumata (Gradient Dark Overlay) */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.card-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* FOOTER SCURO */
+.site-footer {
+  background-color: #090909;
+}
+
+
+
+/* --- FOOTER CUSTOM  --- */
+.custom-footer {
+  background-color: #121212 !important;
+  border-top: 1px solid #242424;
+  color: #a0a0a0;
+}
+
+/* Link del Footer */
+.footer-nav .footer-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #a0a0a0 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav .footer-link:hover {
+  color: #ffffff !important;
+}
+
+/* Icone e Social */
+.footer-social .footer-link {
+  color: #a0a0a0 !important;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-social .footer-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* Linea divisoria sottile */
+.footer-divider {
+  border-color: #242424;
+  opacity: 1;
+}
+
+/* Adattamento al Tema Light (quando attivo) */
+body.theme-light .custom-footer {
+  background-color: #ffffff !important;
+  border-top: 1px solid #eaeaea;
+  color: #6c757d;
+}
+
+body.theme-light .footer-nav .footer-link,
+body.theme-light .footer-social .footer-link {
+  color: #6c757d !important;
+}
+
+body.theme-light .footer-nav .footer-link:hover,
+body.theme-light .footer-social .footer-link:hover {
+  color: #121212 !important;
+}
+
+body.theme-light .footer-divider {
+  border-color: #eaeaea;
+}
