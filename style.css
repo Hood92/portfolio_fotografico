@@ -334,3 +334,13 @@ body.theme-light .footer-social .footer-link:hover {
 body.theme-light .footer-divider {
   border-color: #eaeaea;
 }
+
+
+/* Transizione fluida per il menu a tendina su mobile */
+.navbar-collapse {
+  transition: max-height 0.3s ease-in-out;
+}
+
+
+
+

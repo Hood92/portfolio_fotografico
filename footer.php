@@ -1,14 +1,4 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/parallaxx-js/dist/parallax.css"/>
-    <title>Giorgio Morelli - Fotografia</title>
-</head>
-<body>
-    
+<!-- FOOTER COMPONENT -->
 <footer class="custom-footer mt-auto py-5">
   <div class="container">
     <div class="row gy-4 align-items-center justify-content-between">
@@ -60,10 +50,3 @@
     </div>
   </div>
 </footer>
-
-
-
-
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>

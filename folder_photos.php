@@ -1,169 +1,159 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Giorgio Morelli - Fotografia</title>
-</head>
-<body>
+<!-- CARDS SECTION COMPONENT (BOOTSTRAP 5) -->
+<section id="sezione_catalogo" class="cards-section py-5 my-5">
+  <div class="container">
     
-    <!-- CARDS SECTION COMPONENT (BOOTSTRAP 5) -->
-    <section id="sezione_catalogo" class="cards-section py-5 my-5">
-    
-        <div class="container">
-        
-            <!-- Intestazione della Sezione: Titolo a Sinistra, Link a Destra -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="h3 m-0 text-light fw-light">Selezione di momenti</h2>
-            <a href="foto.php" class="btn btn-outline-light btn-sm rounded-pill px-3">
-                Altre foto &rarr;
-            </a>
-            </div>
-        <div class="container">
-            <div class="cards-wrapper">
-            
-            <!-- Card 1: Persone -->
-            <div class="card-item">
-                <a href="./imgs/01.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
-                <img src="./imgs/01.jpg" alt="Mountain landscape with river" loading="lazy" class="card-img" />
-                <div class="card-overlay">
-                    <h3 class="card-title">Espressioni</h3>
-                    <p class="card-desc"></p>
-                </div>
-                </a>
-            </div>
-
-        <!-- Card 2: Forest Lights -->
-        <div class="card-item">
-            <a href="./imgs/02.jpg"" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="./imgs/02.jpg"" alt="A vivid display of the aurora borealis." loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Forest Lights</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-
-        <!-- Card 3: Nature Walk -->
-        <div class="card-item">
-            <a href="./imgs/03.jpg"" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="./imgs/03.jpg"" alt="Person walking in nature" loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Nature Walk</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-
-        <!-- Card 4: Mountain View -->
-        <div class="card-item">
-            <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="https://picsum.photos/id/1045/800/600" alt="City skyline at night" loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Mountain View</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-
-        <!-- Card 5: Sunset -->
-        <div class="card-item">
-            <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="https://picsum.photos/id/1055/800/600" alt="Beautiful sunset over horizon" loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Golden Sunset</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-        
-
-        </div>
-        <div class="container">
-            <div class="cards-wrapper">
-            
-            <!-- Card 1: Cliff Coast -->
-            <div class="card-item">
-                <a href="./imgs/01.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
-                <img src="./imgs/01.jpg" alt="Mountain landscape with river" loading="lazy" class="card-img" />
-                <div class="card-overlay">
-                    <h3 class="card-title">Cliff Coast</h3>
-                    <p class="card-desc"></p>
-                </div>
-                </a>
-            </div>
-
-        <!-- Card 2: Forest Lights -->
-        <div class="card-item">
-            <a href="https://picsum.photos/id/1022/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="https://picsum.photos/id/1022/800/600" alt="A vivid display of the aurora borealis." loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Forest Lights</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-
-        <!-- Card 3: Nature Walk -->
-        <div class="card-item">
-            <a href="https://picsum.photos/id/1035/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="https://picsum.photos/id/1035/800/600" alt="Person walking in nature" loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Nature Walk</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-
-        <!-- Card 4: Mountain View -->
-        <div class="card-item">
-            <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="https://picsum.photos/id/1045/800/600" alt="City skyline at night" loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Mountain View</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-
-        <!-- Card 5: Sunset -->
-        <div class="card-item">
-            <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
-            <img src="https://picsum.photos/id/1055/800/600" alt="Beautiful sunset over horizon" loading="lazy" class="card-img" />
-            <div class="card-overlay">
-                <h3 class="card-title">Golden Sunset</h3>
-                <p class="card-desc"></p>
-            </div>
-            </a>
-        </div>
-        
-
-        </div>
+    <!-- Intestazione della Sezione: Titolo a Sinistra, Link a Destra -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="h3 m-0 text-light fw-light">Selezione di momenti</h2>
+      <a href="foto.php" class="btn btn-outline-light btn-sm rounded-pill px-3">
+        Altre foto &rarr;
+      </a>
     </div>
-    
-    <a href="#prossima-sezione" class="scroll-up -btn text-decoration-none" aria-label="Scorri verso il basso">
-            <button id ="esplora" class="btn btn-outline-light ">Esplora</button>
-        </a>
-    </section>
 
+    <!-- Prima Riga di Card -->
+    <div class="cards-wrapper mb-4">
+      
+      <!-- Card 1: Espressioni -->
+      <div class="card-item">
+        <a href="./imgs/01.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="./imgs/01.jpg" alt="Mountain landscape with river" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Espressioni</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2: Forest Lights -->
+      <div class="card-item">
+        <a href="./imgs/02.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="./imgs/02.jpg" alt="A vivid display of the aurora borealis." loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Forest Lights</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3: Nature Walk -->
+      <div class="card-item">
+        <a href="./imgs/03.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="./imgs/03.jpg" alt="Person walking in nature" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Nature Walk</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4: Mountain View -->
+      <div class="card-item">
+        <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="https://picsum.photos/id/1045/800/600" alt="City skyline at night" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Mountain View</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 5: Sunset -->
+      <div class="card-item">
+        <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="https://picsum.photos/id/1055/800/600" alt="Beautiful sunset over horizon" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Golden Sunset</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Seconda Riga di Card -->
+    <div class="cards-wrapper">
+      
+      <!-- Card 1: Cliff Coast -->
+      <div class="card-item">
+        <a href="./imgs/01.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="./imgs/01.jpg" alt="Mountain landscape with river" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Cliff Coast</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2: Forest Lights -->
+      <div class="card-item">
+        <a href="https://picsum.photos/id/1022/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="https://picsum.photos/id/1022/800/600" alt="A vivid display of the aurora borealis." loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Forest Lights</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3: Nature Walk -->
+      <div class="card-item">
+        <a href="https://picsum.photos/id/1035/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="https://picsum.photos/id/1035/800/600" alt="Person walking in nature" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Nature Walk</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 4: Mountain View -->
+      <div class="card-item">
+        <a href="https://picsum.photos/id/1045/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="https://picsum.photos/id/1045/800/600" alt="City skyline at night" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Mountain View</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 5: Sunset -->
+      <div class="card-item">
+        <a href="https://picsum.photos/id/1055/800/600" target="_blank" rel="noopener noreferrer" class="card-link">
+          <img src="https://picsum.photos/id/1055/800/600" alt="Beautiful sunset over horizon" loading="lazy" class="card-img" />
+          <div class="card-overlay">
+            <h3 class="card-title">Golden Sunset</h3>
+            <p class="card-desc"></p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottone Esplora in Basso -->
+    <div class="text-center mt-5">
+      <a id="esplora" href="foto.php" class="btn btn-outline-light rounded-pill px-4 py-2">
+        Esplora
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SCRIPT LIGHTBOX E MODALE FOTO -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Modale minimale a tutto schermo senza barre
+    // 1. Modale minimale a tutto schermo
     const modalHTML = `
         <div id="albumLightboxModal" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.96); justify-content:center; align-items:center; flex-direction:column; box-sizing:border-box; padding:20px;">
             
-            <!-- Pulsante chiusura minimale in alto a destra -->
             <button id="closeAlbumLightbox" style="position:absolute; top:20px; right:30px; background:transparent; border:none; color:rgba(255,255,255,0.7); font-size:2.8rem; cursor:pointer; z-index:10000; line-height:1; transition:color 0.2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">&times;</button>
             
-            <!-- Foto Principale Grandissima (occupa quasi tutto lo schermo) -->
             <div style="position:relative; width:100%; height:88vh; display:flex; justify-content:center; align-items:center;">
                 <img id="albumMainImg" src="" alt="" style="max-width:92vw; max-height:86vh; object-fit:contain; border-radius:6px; box-shadow:0 15px 50px rgba(0,0,0,0.9); transition:opacity 0.2s ease;" />
             </div>
 
-            <!-- Miniature fluttuanti in basso (stile pillola semi-trasparente senza barre) -->
             <div id="thumbnailsContainer" style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%); display:flex; gap:10px; background:rgba(0,0,0,0.45); padding:8px 14px; border-radius:35px; backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.08); z-index:10001; align-items:center;">
-                <!-- Le miniature vengono inserite qui dinamicamente -->
             </div>
 
         </div>
@@ -187,7 +177,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const img = this.querySelector(".card-img");
             const currentSrc = img ? img.src : '';
 
-            // Album di foto (puoi sostituirlo con i tuoi link reali)
             currentAlbum = [
                 currentSrc,
                 "./imgs/_1140489.jpg",
@@ -219,7 +208,6 @@ document.addEventListener("DOMContentLoaded", function() {
             const thumbImg = document.createElement("img");
             thumbImg.src = thumbSrc;
             thumbImg.alt = "Thumbnail " + (index + 1);
-            // Stile pulito delle thumbnail fluttuanti
             thumbImg.style.cssText = "width:50px; height:38px; object-fit:cover; border-radius:6px; cursor:pointer; opacity:0.4; transition:all 0.2s ease; border:1px solid rgba(255,255,255,0.2);";
 
             if (index === currentIndex) {
@@ -240,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 4. Navigazione con le frecce della tastiera
+    // 4. Navigazione da tastiera
     function nextPhoto() {
         currentIndex = (currentIndex + 1) % currentAlbum.length;
         updateModalView();
@@ -273,6 +261,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
-</body>
-</html>

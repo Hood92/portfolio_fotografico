@@ -11,25 +11,25 @@
     
     <?php
 
-        include 'header.php'
+        include 'header.php';
         
     ?>
 
      <?php
 
-        include 'hero.php'
+        include 'hero.php';
         
     ?>
 
     <?php
 
-        include 'folder_photos.php'
+        include 'folder_photos.php';
         
     ?>
 
     <?php
 
-        include 'footer.php'
+        include 'footer.php';
         
     ?>
 
@@ -37,7 +37,6 @@
 
 
 
-<script src="main.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
